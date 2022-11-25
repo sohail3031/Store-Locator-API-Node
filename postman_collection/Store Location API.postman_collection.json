@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "f5c355e5-f5ff-4f23-840c-986d115f0dc7",
+		"name": "Store Location API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Stores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/stores",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"stores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create A Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"storeId\": \"0002\",\r\n    \"address\": \"10 main st laurence ma\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/stores",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"stores"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
